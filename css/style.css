@@ -1,0 +1,700 @@
+@import url(../css/slider.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  z-index: 333;
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  box-shadow: rgba(174, 174, 185, 0.26) 0px 7px 29px 0px;
+}
+header .headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headerContent a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+header .headerContent a:hover {
+  color: blueviolet;
+}
+header .leftHeader {
+  display: flex;
+  align-items: center;
+}
+header .leftHeader .logo {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+header .leftHeader .logo img {
+  width: 91px;
+  height: 34px;
+}
+header .leftHeader input {
+  margin-left: 1px;
+}
+header .leftHeader input {
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid black;
+  padding: 12px;
+  width: 670px;
+  padding-left: 60px;
+  font-size: 17px;
+}
+header .leftHeader .glass {
+  position: relative;
+  left: 40px;
+  font-size: 20px;
+}
+header .rightHeader {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .rightHeader .lang {
+  margin-right: 20px;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+header .rightHeader .lang i {
+  text-align: center;
+}
+header .rightHeader .login {
+  border: 1px solid black;
+  padding: 10px;
+  font-weight: 600;
+}
+header .rightHeader .login:hover {
+  background: rgb(228, 228, 228);
+}
+header .rightHeader .login:hover a:hover {
+  color: black;
+}
+header .rightHeader .signup {
+  border: 1px solid black;
+  padding: 10px;
+  font-weight: 600;
+  background: rgb(36, 36, 36);
+}
+header .rightHeader .signup a {
+  color: white;
+}
+header .rightHeader .signup:hover {
+  background: black;
+}
+header .rightHeader .udemy {
+  margin-left: 20px;
+}
+header .rightHeader .teach {
+  margin-left: 10px;
+}
+
+#img {
+  z-index: 111;
+  width: 100%;
+}
+#img .container swiper-container {
+  width: 100%;
+  height: 100%;
+}
+#img .container swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#img .container swiper-slide .img {
+  width: 100%;
+  display: flex;
+  height: 50vh;
+  background-image: url(../img/sekil2.jpg);
+  padding: 50px;
+}
+#img .container swiper-slide .img .info {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  width: 35%;
+  height: 30vh;
+  background: rgb(238, 238, 238);
+  border-radius: 5px;
+}
+#img .container swiper-slide .img .info h1 {
+  font-weight: 750;
+  margin-bottom: 15px;
+}
+#img .container swiper-slide .img .info p {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+#img .container swiper-slide .img .info button {
+  background: black;
+  border: 1px solid black;
+  padding: 10px;
+}
+#img .container swiper-slide .img .info button a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+#img .container swiper-slide .img .info swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#broad .container .broad {
+  margin-top: 40px;
+}
+#broad .container .broad .title h1 {
+  margin-bottom: 10px;
+}
+#broad .container .broad .title p {
+  margin-bottom: 20px;
+}
+#broad .container .broad .slider {
+  border: 1px solid black;
+  padding: 10px;
+}
+#broad .container .broad .slider .boxs {
+  margin-left: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#broad .container .broad .slider .boxs .box {
+  margin-right: 10px;
+  width: 25%;
+}
+#broad .container .broad .slider .boxs .box img {
+  width: 100%;
+}
+#broad .container .broad .slider .boxs .box h4 {
+  width: 80%;
+}
+#broad .container .broad .slider .title {
+  padding: 20px;
+}
+#broad .container .broad .slider .title h1 {
+  margin-bottom: 10px;
+}
+#broad .container .broad .slider .title button {
+  background: transparent;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  border: 1px solid black;
+}
+#broad .container .broad .page {
+  margin-bottom: 10px;
+  display: flex;
+}
+#broad .container .broad .page h4 {
+  margin-right: 15px;
+}
+
+#comment {
+  margin-top: 20px;
+  background: #F6F9F8;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+#comment .container .comment {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#comment .container .comment h1 {
+  margin-bottom: 10px;
+}
+#comment .container .comment .comments {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#comment .container .comment .comments .box {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: white;
+  padding: 20px;
+  width: 30%;
+}
+#comment .container .comment .comments .box img {
+  width: 40px;
+  height: 40px;
+}
+#comment .container .comment .comments .box p {
+  margin-bottom: 20px;
+}
+#comment .container .comment .comments .box .authors {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+#comment .container .comment .comments .box .authors h4 {
+  margin-left: 10px;
+}
+#comment .container .comment .comments .box .authors .author {
+  padding: 9px;
+  font-weight: 700;
+  border-radius: 50%;
+  background: black;
+  color: white;
+}
+#comment .container .comment .comments .box .audio {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+#comment .container .comment .comments .box .audio .audios {
+  font-size: 30px;
+  color: blueviolet;
+  margin-right: 10px;
+}
+#comment .container .comment .comments .box .audio h4 {
+  color: blueviolet;
+}
+
+#student {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#student .container .student {
+  padding-top: 20px;
+}
+#student .container .student h1 {
+  margin-bottom: 20px;
+}
+#student .container .student .boxs {
+  display: flex;
+  justify-content: space-between;
+}
+#student .container .student .boxs .box {
+  padding: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  width: 19%;
+}
+#student .container .student .boxs .box img {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#student .container .student .boxs .box .title h4 {
+  margin-bottom: 10px;
+}
+#student .container .student .boxs .box .title p {
+  margin-bottom: 10px;
+}
+#student .container .student .boxs .box .title img {
+  width: 70%;
+}
+#student .container .student .boxs .box .title h3 {
+  margin-bottom: 20px;
+}
+
+#top .container .top {
+  overflow: hidden;
+  margin-top: 20px;
+  width: 100%;
+}
+#top .container .top h1 {
+  margin-bottom: 20px;
+}
+#top .container .top .boxes {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+#top .container .top .boxes .box {
+  transition: 400ms;
+  overflow: hidden !important;
+  width: 23%;
+  height: 40%;
+}
+#top .container .top .boxes .box .img {
+  overflow: hidden;
+}
+#top .container .top .boxes .box .img img:hover {
+  transition: 400ms;
+  scale: 1.1;
+}
+#top .container .top .boxes .box p {
+  font-weight: 700;
+}
+
+#list {
+  margin-bottom: 20px;
+}
+#list .info {
+  background: #F6F9F8;
+}
+#list .info .container .list-top {
+  padding-top: 40px;
+}
+#list .info .container .list-top h1 {
+  margin-bottom: 20px;
+}
+#list .info .container .list-content {
+  display: flex;
+  justify-content: space-between;
+}
+#list .info .container .list-content .box1 h2 {
+  margin-bottom: 20px;
+}
+#list .info .container .list-content .box1 ul li {
+  list-style: none;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#list .info .container .list-content .box1 ul li a:link {
+  color: rgb(148, 39, 250);
+}
+#list .info .container .list-content .box1 ul p {
+  margin-bottom: 30px;
+}
+#list .info button {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+#list .info button a {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+#trusted {
+  margin-bottom: 20px;
+  height: 30vh;
+  display: flex;
+}
+#trusted .trust h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+#trusted .trust p {
+  text-align: center;
+}
+#trusted .trust .logos {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#slider2 {
+  background: #F6F9F8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+#slider2 .container {
+  width: 60%;
+  margin: auto;
+}
+#slider2 .container .slide {
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+#slider2 .container .slide .left {
+  width: 50%;
+}
+#slider2 .container .slide .left img {
+  width: 20px;
+  height: 20px;
+}
+#slider2 .container .slide .left p {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+#slider2 .container .slide .left a {
+  font-size: 15px;
+  font-weight: 700;
+}
+#slider2 .container .slide .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+#slider2 .container .slide .right .img {
+  display: flex;
+  justify-content: center;
+}
+#slider2 .container .slide .right .img img {
+  margin-bottom: 10px;
+  width: 50%;
+  border-radius: 50%;
+}
+#slider2 .container .slide .right p {
+  margin-bottom: 55px;
+}
+
+#info2 .container {
+  width: 70%;
+}
+#info2 .container .info1 {
+  height: 50%;
+  display: flex;
+  padding: 20px;
+}
+#info2 .container .info1 .left {
+  width: 50%;
+}
+#info2 .container .info1 .left img {
+  width: 192px;
+  height: 33px;
+  margin-bottom: 20px;
+}
+#info2 .container .info1 .left h1 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+#info2 .container .info1 .left ul li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+#info2 .container .info1 .left button {
+  margin-top: 20px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: 600;
+}
+#info2 .container .info1 .left .black {
+  background: black;
+  color: white;
+}
+#info2 .container .info1 .right {
+  width: 50%;
+  background-image: url(../img/info1.jpg);
+  background-size: cover;
+}
+#info2 .container .info2 {
+  display: flex;
+}
+#info2 .container .info2 .left {
+  width: 50%;
+}
+#info2 .container .info2 .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+#info2 .container .info2 .right h1 {
+  margin-bottom: 10px;
+}
+#info2 .container .info2 .right p {
+  margin-bottom: 20px;
+}
+#info2 .container .info2 .right button {
+  width: 30%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 30px;
+  background: #1C1D1F;
+  color: white;
+}
+footer .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .top .left {
+  display: flex;
+}
+footer .top .left ul {
+  margin-right: 40px;
+  margin-left: 10px;
+  list-style: none;
+}
+footer .top .left ul li {
+  margin-bottom: 10px;
+}
+footer .top .right button {
+  padding: 10px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 20px;
+  font-weight: 600;
+}
+footer .top .right button i {
+  margin-right: 10px;
+}
+footer .bottom {
+  margin-top: 20px;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+  }
+  header .headerContent {
+    display: flex;
+  }
+  header .headerContent .leftHeader a,
+  header .headerContent .leftHeader i {
+    display: none;
+  }
+  header .headerContent .leftHeader input {
+    display: none;
+  }
+  header .headerContent .rightHeader a,
+  header .headerContent .rightHeader .login,
+  header .headerContent .rightHeader .signup,
+  header .headerContent .rightHeader .lang,
+  header .headerContent .rightHeader i {
+    display: none;
+  }
+  #img .container {
+    display: none;
+  }
+  #broad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  #broad .container .broad .page h4 {
+    display: none;
+  }
+  #broad .container .broad .slider {
+    width: 100%;
+  }
+  #broad .container .broad .slider .boxs {
+    display: flex;
+    flex-direction: column;
+  }
+  #broad .container .broad .slider .boxs .box {
+    width: 100%;
+  }
+  #comment {
+    width: 80%;
+  }
+  #comment .container .comment {
+    width: 100%;
+  }
+  #comment .container .comment .box:nth-child(2), #comment .container .comment .box:nth-child(3) {
+    display: none;
+  }
+  #comment .container .comment .box:nth-child(1) {
+    width: 100%;
+  }
+  #student {
+    width: 85%;
+  }
+  #student .container .student .boxs .box:nth-child(1) {
+    width: 100%;
+  }
+  #student .container .student .boxs .box:nth-child(2), #student .container .student .boxs .box:nth-child(3), #student .container .student .boxs .box:nth-child(4), #student .container .student .boxs .box:nth-child(5) {
+    display: none;
+  }
+  #top .container .top .boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #top .container .top .boxes .box {
+    width: 100%;
+  }
+  #list .info {
+    width: 82%;
+  }
+  #list .info .container .list-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  #list .info .container .list-content .box1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #trusted .container .trust {
+    display: none;
+  }
+  #slider2 {
+    display: none;
+  }
+  #info2 {
+    display: none;
+  }
+  #info2 .container .info1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #info2 .container .info1 .left {
+    width: 100%;
+  }
+  #info2 .container .info2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #info2 .container .info2 .left {
+    display: none;
+  }
+  #info2 .container .info2 .right {
+    width: 100%;
+  }
+  footer {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
